@@ -1,0 +1,48 @@
+{
+  "project": "BBP_Quantitative_Research_Demo",
+  "mode": "paper",
+  "manual_review": true,
+  "automatic_orders": false,
+  "account": {
+    "currency": "USD",
+    "initial_balance": 100000
+  },
+  "instruments": [
+    "XAUUSD",
+    "BTCUSD",
+    "XAGUSD",
+    "ETHUSD"
+  ],
+  "timeframes": {
+    "regime": "H4",
+    "bias": "H1",
+    "setup": "M15",
+    "confirmation": "M5"
+  },
+  "risk": {
+    "per_trade_fraction": 0.0025,
+    "total_fraction": 0.01,
+    "group_fraction": 0.005,
+    "max_positions_per_symbol": 1
+  },
+  "holding": {
+    "max_hours": 12,
+    "allow_overnight": true,
+    "allow_weekend": true
+  },
+  "strategy": {
+    "name": "trend_continuation_v1",
+    "bbp_ema_length": 13,
+    "di_length": 14,
+    "adx_smoothing": 14,
+    "atr_length": 14,
+    "pivot_left": 2,
+    "pivot_right": 2
+  },
+  "broker": {
+    "preferred": "Synthetic example; no broker connection",
+    "platform": "OFFLINE",
+    "server": null,
+    "qualification": "pending"
+  }
+}

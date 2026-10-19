@@ -1,0 +1,2 @@
+# Runtime and tests use Python 3.12.14 (reference) / 3.14.8 (Windows compatibility) standard library only.
+# No third-party distributions to install. Keep this file empty of requirements.

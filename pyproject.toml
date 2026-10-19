@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bbp-quantitative-research-demo"
+version = "1.0.3"
+description = "Offline synthetic demonstration of causal rules, risk and accounting"
+requires-python = ">=3.12,<3.15"
+dependencies = []
+license = "MIT AND CC0-1.0"
+license-files = ["LICENSE", "LICENSE-DATA"]
+
+[project.scripts]
+bbp-demo = "bbp_demo.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+bbp_demo = ["resources/*"]

@@ -1,0 +1,15 @@
+{
+  "label": "Conservative simulation scenario; commission and rollover costs are not broker-qualified",
+  "commission_round_trip_usd_per_lot": 7,
+  "slippage_round_trip_usd_per_lot": 12,
+  "financing_annual_fraction": 0.20,
+  "financing_bank_days": 360,
+  "financing_rollover_multiplier": 3,
+  "margin_fraction_floor": 0.50,
+  "max_spread_atr_fraction": 0.25,
+  "max_quote_age_seconds": 60,
+  "daily_loss_fraction": 0.01,
+  "drawdown_fraction": 0.05,
+  "gross_notional_multiple": 1,
+  "used_margin_fraction": 0.25
+}
